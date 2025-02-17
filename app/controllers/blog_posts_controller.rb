@@ -16,10 +16,15 @@ class BlogPostsController < ApplicationController
     def create
         @blog_post = BlogPost.new(blog_post_params)
         if @blog_post.save
-            redirect_to @blog_post
+            head :created
+            #redirect_to @blog_post
         else
-            render :new, status: :unprocessable_entity
+            render :new, status: 422
         end
+    end
+
+    def count
+        @blog_post_count = BlogPost.count
     end
 
     private
