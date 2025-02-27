@@ -1,0 +1,514 @@
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY) /*application='Blog'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-02-27 18:21:46 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 4 pending migrations:
+
+db/migrate/20250213151948_create_blog_posts.rb
+db/migrate/20250214090451_add_description_to_blog_posts.rb
+db/migrate/20250214092409_remove_description_from_blog_posts.rb
+db/migrate/20250220071012_devise_create_users.rb
+
+
+):
+  
+activerecord (8.0.1) lib/active_record/migration.rb:743:in `check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.10) lib/rack/method_override.rb:28:in `call'
+rack (3.1.10) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.1) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-27 18:21:46 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate
+
+You have 4 pending migrations:
+
+db/migrate/20250213151948_create_blog_posts.rb
+db/migrate/20250214090451_add_description_to_blog_posts.rb
+db/migrate/20250214092409_remove_description_from_blog_posts.rb
+db/migrate/20250220071012_devise_create_users.rb
+
+
+):
+  
+activerecord (8.0.1) lib/active_record/migration.rb:743:in `check_pending_migrations'
+activerecord (8.0.1) lib/active_record/migration.rb:660:in `block (2 levels) in call'
+activesupport (8.0.1) lib/active_support/file_update_checker.rb:85:in `execute'
+activerecord (8.0.1) lib/active_record/migration.rb:665:in `block in call'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in `synchronize'
+activerecord (8.0.1) lib/active_record/migration.rb:657:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:31:in `block in call'
+activesupport (8.0.1) lib/active_support/callbacks.rb:100:in `run_callbacks'
+actionpack (8.0.1) lib/action_dispatch/middleware/callbacks.rb:30:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:31:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/show_exceptions.rb:32:in `call'
+railties (8.0.1) lib/rails/rack/logger.rb:41:in `call_app'
+railties (8.0.1) lib/rails/rack/logger.rb:29:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/remote_ip.rb:96:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/request_id.rb:34:in `call'
+rack (3.1.10) lib/rack/method_override.rb:28:in `call'
+rack (3.1.10) lib/rack/runtime.rb:24:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (8.0.1) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/executor.rb:16:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/static.rb:27:in `call'
+rack (3.1.10) lib/rack/sendfile.rb:114:in `call'
+actionpack (8.0.1) lib/action_dispatch/middleware/host_authorization.rb:143:in `call'
+railties (8.0.1) lib/rails/engine.rb:535:in `call'
+puma (6.6.0) lib/puma/configuration.rb:279:in `call'
+puma (6.6.0) lib/puma/request.rb:99:in `block in handle_request'
+puma (6.6.0) lib/puma/thread_pool.rb:390:in `with_force_shutdown'
+puma (6.6.0) lib/puma/request.rb:98:in `handle_request'
+puma (6.6.0) lib/puma/server.rb:472:in `process_client'
+puma (6.6.0) lib/puma/server.rb:254:in `block in run'
+puma (6.6.0) lib/puma/thread_pool.rb:167:in `block in spawn_thread'
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='Blog'*/[0m
+  [1m[36mActiveRecord::InternalMetadata Create (2.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ('environment', 'development', '2025-02-27 10:23:07.462156', '2025-02-27 10:23:07.462159') RETURNING "key" /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Migrating to CreateBlogPosts (20250213151948)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Blog'*/[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "blog_posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250213151948') RETURNING "version" /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Blog'*/[0m
+Migrating to AddDescriptionToBlogPosts (20250214090451)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Blog'*/[0m
+  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "blog_posts" ADD "description" varchar /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250214090451') RETURNING "version" /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Blog'*/[0m
+Migrating to RemoveDescriptionFromBlogPosts (20250214092409)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Blog'*/[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA foreign_keys /*application='Blog'*/[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys /*application='Blog'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON /*application='Blog'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF /*application='Blog'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ablog_posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "description" varchar) /*application='Blog'*/[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "ablog_posts" ("id","title","body","created_at","updated_at","description")
+                     SELECT "id","title","body","created_at","updated_at","description" FROM "blog_posts" /*application='Blog'*/[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "blog_posts" /*application='Blog'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "blog_posts" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Blog'*/[0m
+  [1m[35mSQL (0.0ms)[0m  [1m[32mINSERT INTO "blog_posts" ("id","title","body","created_at","updated_at")
+                     SELECT "id","title","body","created_at","updated_at" FROM "ablog_posts" /*application='Blog'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "ablog_posts" /*application='Blog'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0 /*application='Blog'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1 /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250214092409') RETURNING "version" /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Blog'*/[0m
+Migrating to DeviseCreateUsers (20250220071012)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Blog'*/[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL) /*application='Blog'*/[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email") /*application='Blog'*/[0m
+  [1m[35m (0.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token") /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20250220071012') RETURNING "version" /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-02-27 18:23:22 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.6ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" /*action='index',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 1.6ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | GC: 0.0ms)
+Completed 200 OK in 40ms (Views: 9.7ms | ActiveRecord: 0.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-02-27 18:23:22 +0800
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-02-27 18:23:22 +0800
+Started GET "/assets/turbo.min-fae85750.js" for 127.0.0.1 at 2025-02-27 18:23:22 +0800
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-02-27 18:23:22 +0800
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-02-27 18:23:22 +0800
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-02-27 18:23:22 +0800
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-02-27 18:23:22 +0800
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-02-27 18:23:22 +0800
+Started GET "/" for 127.0.0.1 at 2025-02-27 18:23:33 +0800
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" /*action='index',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | GC: 0.0ms)
+Completed 200 OK in 12ms (Views: 6.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/blog_posts/count" for 127.0.0.1 at 2025-02-27 18:23:40 +0800
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"count"}
+  [1m[36mBlogPost Load (0.0ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = NULL LIMIT 1 /*action='show',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:52:in `set_blog_post'
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :set_blog_post rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-27 18:23:40 +0800
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" /*action='index',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | GC: 0.0ms)
+Completed 200 OK in 7ms (Views: 1.8ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2025-02-27 18:23:53 +0800
+Processing by BlogPostsController#new as HTML
+Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-02-27 18:23:53 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.4ms | GC: 0.0ms)
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 5.8ms | GC: 0.2ms)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 0.2ms)
+Completed 200 OK in 23ms (Views: 8.0ms | ActiveRecord: 0.3ms (0 queries, 0 cached) | GC: 1.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-02-27 18:24:14 +0800
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'joselcastro12212@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='sessions'*/[0m
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.2ms)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 172ms (Views: 2.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-02-27 18:24:23 +0800
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'joselcastro12212@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='sessions'*/[0m
+Completed 401 Unauthorized in 7ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 167ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'joselcastro12212@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*application='Blog'*/[0m
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'joselcastro12212@gmail.com' ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Blog'*/[0m
+  [1m[36mUser Exists? (8.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'joselcastro12212@gmail.com' LIMIT 1 /*application='Blog'*/[0m
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES ('joselcastro12212@gmail.com', '$2a$12$4HKXOIfQ.MdIpHseQGdI7uDwXzM6cUGc2f8TMxdpD.OVcBlhjycyq', NULL, NULL, NULL, '2025-02-27 10:53:33.224922', '2025-02-27 10:53:33.224922') RETURNING "id" /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (1.8ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Blog'*/[0m
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-02-27 18:58:19 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 2.0ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-02-27 18:58:38 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.1ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.0ms)
+Completed 200 OK in 8ms (Views: 1.8ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2025-02-27 18:58:42 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+Started GET "/favicon.ico" for 127.0.0.1 at 2025-02-27 18:58:42 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users/password/new" for 127.0.0.1 at 2025-02-27 18:58:47 +0800
+Processing by Devise::PasswordsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/shared/_error_messages.html.erb (Duration: 0.2ms | GC: 0.0ms)
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 1.8ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 2.6ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'joselcastro12212@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*application='Blog'*/[0m
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-02-27 19:13:38 +0800
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'raymark@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='sessions'*/[0m
+Completed 401 Unauthorized in 8ms (ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | GC: 0.0ms)
+Completed 200 OK in 168ms (Views: 2.3ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2025-02-27 19:13:41 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/shared/_links.html.erb (Duration: 0.1ms | GC: 0.0ms)
+  Rendered /home/rxrosli/.rbenv/versions/3.2.1/lib/ruby/gems/3.2.0/gems/devise-4.9.4/app/views/devise/sessions/new.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 9ms (Views: 2.1ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='Blog'*/[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'raymark@gmail.com' LIMIT 1 /*application='Blog'*/[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES ('raymark@gmail.com', '$2a$12$ZBHvnS0moqWkZF2jXtSXauEhHYsG9aS2/n1zHmrxVAYoIEe2h7Ada', NULL, NULL, NULL, '2025-02-27 11:14:14.719307', '2025-02-27 11:14:14.719307') RETURNING "id" /*application='Blog'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='Blog'*/[0m
+Started POST "/users/sign_in" for 127.0.0.1 at 2025-02-27 19:14:49 +0800
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"[FILTERED]", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = 'raymark@gmail.com' ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='sessions'*/[0m
+Redirected to http://127.0.0.1:3000/blog_posts/new
+Completed 303 See Other in 167ms (ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2025-02-27 19:14:49 +0800
+Processing by BlogPostsController#new as TURBO_STREAM
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='Blog',controller='blog_posts'*/[0m
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/new.html.erb within layouts/application
+  Rendered blog_posts/_form.html.erb (Duration: 7.0ms | GC: 0.3ms)
+  Rendered blog_posts/new.html.erb within layouts/application (Duration: 7.4ms | GC: 0.3ms)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | GC: 0.3ms)
+Completed 200 OK in 17ms (Views: 8.2ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started POST "/blog_posts" for 127.0.0.1 at 2025-02-27 19:14:56 +0800
+Processing by BlogPostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blog_post"=>{"title"=>"1st blog", "body"=>"hello wordl\n"}, "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='blog_posts'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:17:in `create'
+  [1m[36mBlogPost Create (0.8ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES ('1st blog', 'hello wordl
+', '2025-02-27 11:14:56.658422', '2025-02-27 11:14:56.658422') RETURNING "id" /*action='create',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:17:in `create'
+Completed 201 Created in 12ms (ActiveRecord: 1.0ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2025-02-27 19:15:06 +0800
+Processing by BlogPostsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/index.html.erb within layouts/application
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" /*action='index',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/views/blog_posts/index.html.erb:3
+  Rendered blog_posts/index.html.erb within layouts/application (Duration: 1.0ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/views/layouts/application.html.erb:31
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | GC: 0.1ms)
+Completed 200 OK in 9ms (Views: 2.9ms | ActiveRecord: 0.1ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/blog_posts/1" for 127.0.0.1 at 2025-02-27 19:16:24 +0800
+Processing by BlogPostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlogPost Load (0.0ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = 1 LIMIT 1 /*action='show',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:52:in `set_blog_post'
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/show.html.erb within layouts/application
+  Rendered blog_posts/show.html.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/views/layouts/application.html.erb:31
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 5.3ms | ActiveRecord: 0.7ms (2 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2025-02-27 19:16:40 +0800
+Processing by BlogPostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='Blog',controller='blog_posts'*/[0m
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/new.html.erb within layouts/application
+  Rendered blog_posts/_form.html.erb (Duration: 0.8ms | GC: 0.0ms)
+  Rendered blog_posts/new.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 15ms (Views: 1.9ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 3.9ms)
+
+
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-02-27 19:16:40 +0800
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-02-27 19:16:40 +0800
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-02-27 19:16:40 +0800
+Started GET "/assets/turbo.min-fae85750.js" for 127.0.0.1 at 2025-02-27 19:16:40 +0800
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-02-27 19:16:40 +0800
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-02-27 19:16:40 +0800
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-02-27 19:16:40 +0800
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-02-27 19:16:40 +0800
+Started POST "/blog_posts" for 127.0.0.1 at 2025-02-27 19:16:46 +0800
+Processing by BlogPostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blog_post"=>{"title"=>"2nd", "body"=>"asdatweq f"}, "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='blog_posts'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:17:in `create'
+  [1m[36mBlogPost Create (0.6ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES ('2nd', 'asdatweq f', '2025-02-27 11:16:46.364341', '2025-02-27 11:16:46.364341') RETURNING "id" /*action='create',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:17:in `create'
+Redirected to 
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.4ms)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...); return".):
+  
+app/controllers/blog_posts_controller.rb:19:in `create'
+Started GET "/blog_posts/new" for 127.0.0.1 at 2025-02-27 19:17:42 +0800
+Processing by BlogPostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='Blog',controller='blog_posts'*/[0m
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/new.html.erb within layouts/application
+  Rendered blog_posts/_form.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered blog_posts/new.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | GC: 2.7ms)
+Completed 200 OK in 20ms (Views: 6.3ms | ActiveRecord: 0.7ms (1 query, 0 cached) | GC: 2.7ms)
+
+
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-02-27 19:17:42 +0800
+Started GET "/assets/turbo.min-fae85750.js" for 127.0.0.1 at 2025-02-27 19:17:43 +0800
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-02-27 19:17:43 +0800
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-02-27 19:17:43 +0800
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-02-27 19:17:43 +0800
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-02-27 19:17:43 +0800
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-02-27 19:17:43 +0800
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-02-27 19:17:43 +0800
+Started POST "/blog_posts" for 127.0.0.1 at 2025-02-27 19:17:50 +0800
+Processing by BlogPostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blog_post"=>{"title"=>"2nd blog post", "body"=>"qwdqwf "}, "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='blog_posts'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:17:in `create'
+  [1m[36mBlogPost Create (0.6ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES ('2nd blog post', 'qwdqwf ', '2025-02-27 11:17:50.995273', '2025-02-27 11:17:50.995273') RETURNING "id" /*action='create',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:17:in `create'
+Redirected to http://127.0.0.1:3000/blog_posts/3
+Completed 302 Found in 10ms (ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/blog_posts/3" for 127.0.0.1 at 2025-02-27 19:17:51 +0800
+Processing by BlogPostsController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mBlogPost Load (0.1ms)[0m  [1m[34mSELECT "blog_posts".* FROM "blog_posts" WHERE "blog_posts"."id" = 3 LIMIT 1 /*action='show',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:52:in `set_blog_post'
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/show.html.erb within layouts/application
+  Rendered blog_posts/show.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/views/layouts/application.html.erb:31
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.1ms)
+Completed 200 OK in 10ms (Views: 2.5ms | ActiveRecord: 0.2ms (2 queries, 0 cached) | GC: 0.1ms)
+
+
+Started GET "/blog_posts/new" for 127.0.0.1 at 2025-02-27 19:21:41 +0800
+Processing by BlogPostsController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='Blog',controller='blog_posts'*/[0m
+  Rendering layout layouts/application.html.erb
+  Rendering blog_posts/new.html.erb within layouts/application
+  Rendered blog_posts/_form.html.erb (Duration: 1.0ms | GC: 0.0ms)
+  Rendered blog_posts/new.html.erb within layouts/application (Duration: 1.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | GC: 0.1ms)
+Completed 200 OK in 18ms (Views: 3.9ms | ActiveRecord: 0.8ms (1 query, 0 cached) | GC: 0.4ms)
+
+
+Started GET "/assets/application-8b441ae0.css" for 127.0.0.1 at 2025-02-27 19:21:41 +0800
+Started GET "/assets/controllers/hello_controller-708796bd.js" for 127.0.0.1 at 2025-02-27 19:21:41 +0800
+Started GET "/assets/controllers/index-ee64e1f1.js" for 127.0.0.1 at 2025-02-27 19:21:41 +0800
+Started GET "/assets/application-bfcdf840.js" for 127.0.0.1 at 2025-02-27 19:21:41 +0800
+Started GET "/assets/turbo.min-fae85750.js" for 127.0.0.1 at 2025-02-27 19:21:41 +0800
+Started GET "/assets/stimulus.min-4b1e420e.js" for 127.0.0.1 at 2025-02-27 19:21:41 +0800
+Started GET "/assets/stimulus-loading-1fc53fe7.js" for 127.0.0.1 at 2025-02-27 19:21:41 +0800
+Started GET "/assets/controllers/application-3affb389.js" for 127.0.0.1 at 2025-02-27 19:21:41 +0800
+Started POST "/blog_posts" for 127.0.0.1 at 2025-02-27 19:21:50 +0800
+Processing by BlogPostsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "blog_post"=>{"title"=>"3rd", "body"=>"sdkfgjsbdfg"}, "button"=>""}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 2 ORDER BY "users"."id" ASC LIMIT 1 /*action='create',application='Blog',controller='blog_posts'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*action='create',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:17:in `create'
+  [1m[36mBlogPost Create (0.6ms)[0m  [1m[32mINSERT INTO "blog_posts" ("title", "body", "created_at", "updated_at") VALUES ('3rd', 'sdkfgjsbdfg', '2025-02-27 11:21:50.583699', '2025-02-27 11:21:50.583699') RETURNING "id" /*action='create',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:17:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*action='create',application='Blog',controller='blog_posts'*/[0m
+  ↳ app/controllers/blog_posts_controller.rb:17:in `create'
+Completed 201 Created in 10ms (ActiveRecord: 0.8ms (2 queries, 0 cached) | GC: 0.4ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='Blog'*/[0m
