@@ -1,12 +1,11 @@
 class BlogPostsController < ApplicationController
+    before_action :authenticate_user!, except: [ :index, :show ]
     before_action :set_blog_post, only: [ :show, :edit, :update, :destroy ]
     def index
         @blog_posts = BlogPost.all
     end
 
     def show
-    rescue ActiveRecord::RecordNotFound
-        redirect_to root_path
     end
 
     def new
@@ -51,5 +50,8 @@ class BlogPostsController < ApplicationController
 
     def set_blog_post
         @blog_post = BlogPost.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+    # head 404
+    redirect_to root_path
     end
 end
